@@ -1,2 +1,2 @@
-## MJRBot-Node-JS-Public-WebSocket-Example
+## MJRBot-Public-WebSocket-Examples
 Basic Working Example for MJRBot Public WebSocket System
