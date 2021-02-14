@@ -65,7 +65,7 @@ client.on('connect', function(connection) {
 			connection.send(JSON.stringify({
                 "type": "LISTEN",
                 "nonce": "snLwNF1kKeYxKOqHiq19%WEC*2UYuGxMrm6*30b9rFzKC0Yw5$S^2yXT!pyCLob8", // Unique Random 64 or higher string
-                "channel_id": ID,  // Your channels personal twitch id Token can be found from https://mjrbot.mjrlegends.com/developers.php
+                "channel_id": 13371337,  // Your channels personal twitch id Token can be found from https://mjrbot.mjrlegends.com/developers.php
                 "topics": ["channel_points_reward_redeem"], // Topics to listen too
                 "token": "TOKEN" // Your channels personal WS Token from https://mjrbot.mjrlegends.com/developers.php
             }));
