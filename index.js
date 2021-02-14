@@ -51,7 +51,7 @@ client.on('connect', function(connection) {
 				
 				//Listen for Topic: channel_points_reward_redeem
 				if(json.topic === "channel_points_reward_redeem")
-					console.log("New Channel Points Reward Redeemed, TimeStamp: " + json.message.timestamp + " User: " + json.message.redemption.user.display_name + "Input: " +  json.message.redemption.user_input);	
+					console.log("New Channel Points Reward Redeemed, TimeStamp: " + json.message.timestamp + " | User: " + json.message.redemption.user.display_name + " | Reward ID: " +  json.message.redemption.reward.id + " | Reward Name: " +  json.message.redemption.reward.title + " | Input: " +  json.message.redemption.user_input);	
 				else
 					console.log("Unknown Event Message " + message.utf8Data);
 			}
@@ -65,7 +65,7 @@ client.on('connect', function(connection) {
 			connection.send(JSON.stringify({
                 "type": "LISTEN",
                 "nonce": "snLwNF1kKeYxKOqHiq19%WEC*2UYuGxMrm6*30b9rFzKC0Yw5$S^2yXT!pyCLob8", // Unique Random 64 or higher string
-                "channel_id": CHANNELID,  // Your channels personal twitch id Token can be found from https://mjrbot.mjrlegends.com/developers.php
+                "channel_id": ID,  // Your channels personal twitch id Token can be found from https://mjrbot.mjrlegends.com/developers.php
                 "topics": ["channel_points_reward_redeem"], // Topics to listen too
                 "token": "TOKEN" // Your channels personal WS Token from https://mjrbot.mjrlegends.com/developers.php
             }));
