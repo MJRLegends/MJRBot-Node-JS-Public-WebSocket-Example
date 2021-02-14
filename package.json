@@ -9,7 +9,6 @@
   "author": "MJRLegends",
   "license": "ISC",
   "dependencies": {
-    "reconnecting-websocket": "^4.4.0",
     "websocket": "^1.0.33"
   }
 }
