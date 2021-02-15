@@ -29,6 +29,10 @@ client.on('connect', function(connection) {
 	//Handle Connection Closed
     connection.on('close', function(reasonCode, message) {
         console.log("Connection Closed, Reason Code: " + reasonCode  + " Message: " + message);
+	setTimeout(function () {
+		console.log("Connection Auto Reconnecting!");
+		client.connect('wss://ws.mjrlegends.com:2096');
+	}, 30);
     });
 	
 	//Handle Incoming messages

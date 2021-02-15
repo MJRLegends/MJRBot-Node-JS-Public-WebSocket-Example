@@ -1,0 +1,14 @@
+{
+  "name": "mjrbot-websocket-example",
+  "version": "1.0.0",
+  "description": "Basic usage example for MJRBot Public Websockets System",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "MJRLegends",
+  "license": "ISC",
+  "dependencies": {
+    "ws": "^7.4.3"
+  }
+}
