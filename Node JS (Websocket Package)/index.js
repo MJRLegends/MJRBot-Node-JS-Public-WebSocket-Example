@@ -1,7 +1,7 @@
 #!/usr/bin/env node
-var WebSocketClient = require('websocket').client;
+const WebSocketClient = require('websocket').client;
 
-var client = new WebSocketClient({
+const client = new WebSocketClient({
 	keepalive: true, // Settings to make connection send server a ping every 30 seconds
 	keepaliveInterval: 30000
 });
